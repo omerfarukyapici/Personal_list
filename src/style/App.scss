@@ -1,0 +1,246 @@
+.App {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem 2rem 0rem;
+}
+.logo {
+    background-image: url("../img/logo.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 1.5rem 0rem;
+    
+}
+.logo:hover {
+    animation: logoAnimation 1s ease-in-out ;
+}
+
+@keyframes logoAnimation {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        
+    }
+}
+
+
+.form_button_div {
+    display: flex;
+    justify-content: space-between;
+}
+.main_div {
+    width: 1300px;
+    padding: 0rem 1rem 0rem 1rem;
+}
+.job_name_input{
+    width: 850px;
+    height: 2.6rem;
+    font-size: 1.1rem;
+    padding-left: .5rem;
+    border-radius: .3rem;
+    border: 1px solid grey;
+}
+
+.create {
+    color: rgb(36, 30, 30);
+}
+
+.create_important_input {
+    width: 300px;
+    height: 2.85555rem;
+    padding-left: .5rem;
+    font-size: 1rem;
+    border-radius: .3rem;
+    border: 1px solid grey;
+}
+
+
+
+.create_button {
+    padding: .8rem 2rem .8rem 2rem;
+    margin-top: 3.823423rem;
+    border-radius: .3rem;
+    border: 1px solid grey;
+    background-color: rgb(24, 24, 68);
+    color: white;
+    font-size: 1rem;
+}
+h3 {
+    color: grey;
+}
+
+span {
+    padding: 1rem;
+}
+
+
+/* todos */
+ul {
+    list-style: none;
+    width: 1300px;
+    padding-left: 0;
+}
+
+.todo-list {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(181, 180, 180);
+    padding-left: .5rem;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.todo-list button {
+    margin: auto;
+}
+.todo-buttons {
+    width: 200px;
+    display: flex;
+}
+.todo-text {
+    width: 700px;
+    word-break: break-all;
+    margin: auto;
+    font-size: 1.1rem;
+} 
+.todo-priority {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.edit_button, .delete_button {
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    background-size: contain;
+    padding: 1.2rem;
+    background-color: white;
+    border: none;
+}
+
+.edit_button:hover, .delete_button:hover {
+    transform: scale(1.1);
+}
+
+.edit_button{
+    background-image: url("../img/pencil.svg");
+    transform: rotate(180deg);
+}
+
+.delete_button{
+    background-image: url("../img/trash.svg");
+    
+}
+
+
+
+
+
+
+/* searching listing */
+.search_list {
+    margin-top: 5%;
+}
+.search_list h3 {
+    color: rgb(204, 203, 203);
+}
+.search_form_button_div{
+    background-color: rgb(31, 31, 67);
+    padding: .5rem;
+
+}
+.searchListWidth {
+    width: 400px;
+}
+
+
+
+
+
+
+/* Media */
+
+@media (max-width: 1350px) {
+    .main_div {
+        width: 900px;
+    }
+    ul {
+        width: auto;
+    }
+    .job_name_input{
+        width: auto;
+    }
+    .create_important_input {
+        width: auto;
+    }
+    .todo-list {
+        display: block;
+    }
+    .todo-buttons {
+        width: auto;
+        display: flex;
+    }
+    .todo-text {
+        width: auto;
+    } 
+    .searchListWidth {
+        width: auto;
+    }
+    .search_form_button_div{
+        background-color: none !important;
+        padding: .5rem;
+    
+    }
+    .todo-priority {
+        width: auto;
+    }
+    
+  }
+  
+
+  @media (max-width: 600px) {
+    .App {
+        display: block;
+    }
+    .main_div {
+        width: auto;
+    }
+    ul {
+        width: auto;
+    }
+    .form_button_div {
+        display: block;
+    }
+    .job_name_input{
+        width: auto;
+    }
+    .create_important_input {
+        width: auto;
+    }
+    .todo-list {
+        display: block;
+    }
+    .todo-buttons {
+        width: auto;
+        display: flex;
+    }
+    .todo-text {
+        width: auto;
+    } 
+    .searchListWidth {
+        width: auto;
+    }
+    .search_form_button_div{
+        background-color: none !important;
+        padding: .5rem;
+    
+    }
+    .todo-priority {
+        width: auto;
+    }
+    
+  }
